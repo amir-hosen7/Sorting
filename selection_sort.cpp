@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
 
-void mySort(int n, int arr[]) {
+void selection_sort(int n, int arr[]) {
     for (int i = 0; i < n; i++) {
-        int Min = v[i], idx;
+        int Min = arr[i], idx = i;
         for (int j = i; j < n; j++) {
             if (arr[j] < Min) {
                 Min = arr[j], idx = j;
@@ -29,7 +29,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    mySort(n, arr);
+    selection_sort(n, arr);
     print(n, arr);
     return 0;
 }
